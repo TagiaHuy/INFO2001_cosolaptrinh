@@ -2,7 +2,7 @@
 #include <stdlib.h>
 typedef struct
 {
-    char name[31];
+    char name[51];
     char author[31];
     float price;
 } Book;
@@ -23,16 +23,16 @@ int main() {
     // Nhập giá trị cho mảng
     for (i = 0; i < n; i++) {
         printf("Nhap ten sach thu %d: ", i + 1);
-        scanf(" %31[^\n]", arr[i].name);
+        scanf(" %51[^\n]", arr[i].name);
         printf("Nhap ten tac gia : ");
         scanf(" %31[^\n]", arr[i].author);
         printf("Nhap gia sach : ");
         scanf("%f", &arr[i].price);
     }
     // In giá trị của mảng
-    printf("Cac phan tu trong mang: ");
+    printf("Cac phan tu trong mang: \n");
     for (i = 0; i < n; i++) {
-    printf("ten sach %s tac gia %s gia sach %f \n", arr[i].name, arr[i].author, arr[i].price);
+    printf("ten sach: %s \ntac gia: %s \ngia sach: %f \n", arr[i].name, arr[i].author, arr[i].price);
     }
     // Giải phóng bộ nhớ khi không cần sử dụng nữa
     free(arr);

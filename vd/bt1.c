@@ -3,18 +3,17 @@
 typedef struct
 {
     char name[31];
-    char author[31];
-    float price;
-} Book;
+    float GPA;
+} SV;
 
 
 int main() {
-    Book *arr;
+    SV *arr;
     int n, i;
-    printf("Nhap so luong sach : ");
+    printf("Nhap so luong sinh vien : ");
     scanf("%d", &n);
     // Cấp phát bộ nhớ cho mảng
-    arr = (Book*)malloc(n * sizeof(Book));
+    arr = (SV*)malloc(n * sizeof(SV));
     // Kiểm tra xem bộ nhớ có được cấp phát thành công không
     if (arr == NULL) {
         printf("Khong the cap phat bo nho.");
@@ -22,17 +21,15 @@ int main() {
     }
     // Nhập giá trị cho mảng
     for (i = 0; i < n; i++) {
-        printf("Nhap ten sach thu %d: ", i + 1);
+        printf("Nhap ten sinh vien thu %d: ", i + 1);
         scanf(" %31[^\n]", arr[i].name);
-        printf("Nhap ten tac gia : ");
-        scanf(" %31[^\n]", arr[i].author);
-        printf("Nhap gia sach : ");
-        scanf("%f", &arr[i].price);
+        printf("Nhap diem sinh vien : ");
+        scanf("%f",&arr[i].GPA);
     }
     // In giá trị của mảng
     printf("Cac phan tu trong mang: ");
     for (i = 0; i < n; i++) {
-    printf("ten sach %s tac gia %s gia sach %f \n", arr[i].name, arr[i].author, arr[i].price);
+    printf("ten %s diem %f \n", arr[i].name, arr[i].GPA);
     }
     // Giải phóng bộ nhớ khi không cần sử dụng nữa
     free(arr);
