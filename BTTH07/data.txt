@@ -1,0 +1,9 @@
+ta gia huy bit123 2.32
+huy ta bit123 23.23
+ta gia huy2 bit123 23.00
+gia huy bit213 32.00
+"c:\Users\lethu\OneDrive\Programming Fundamentals\ cd inf
+olaptrinh\t?p\" ; if ($?) { gcc t1.c -o t1 } ; if  O2001_cos inf
+{ .\t1 } ($?) inf
+"c:\Users\lethu\OneDrive\Programming Fundamentals\ cd inf
+olaptrinh\t?p\" ; if ($?) { gcc t1.c -o t1 } ; if  O2001_cos inf
